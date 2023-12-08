@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rental Application</title>
+    
+    <link rel="stylesheet" href="../css/appstyle.css">
+    
+     <link rel="shortcut icon" href="../img/smiley.ico">
+    
+</head>
+
+<body>
+    <h1>Rental Application</h1>
+    
+    <form id="rental_application">
+    <form action="submit_application.php" method="post">
+        
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="license">Driver's License Number:</label>
+        <input type="text" id="license" name="license" required>
+
+        <label for="current_address">Current Address:</label>
+        <textarea id="current_address" name="current_address" rows="4" required></textarea>
+
+        <label for="monthly_income">Monthly Income:</label>
+        <input type="number" id="monthly_income" name="monthly_income" required>
+
+        <label for="employment_status">Employment Status:</label>
+        <select id="employment_status" name="employment_status" required>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="self_employed">Self-Employed</option>
+            <option value="student">Student</option>
+        </select>
+        
+        <label for="employer_name">Employer Name:</label>
+        <input type="text" id="employer_name" name="employer_name">
+
+        <label for="rental_history">Rental History:</label>
+        <textarea id="rental_history" name="rental_history" rows="4"></textarea>
+        
+
+
+        <button type="submit">Submit Application</button>
+        
+    </form>
+    <br>
+    <br>
+    <h5>At MALAND LLC Rentals we value your privacy.
+    <br>
+    All information from rental applications is kept securely within our organization and reliably hosted by Amazon Web Services&copy.
+    <br>
+    Your identity is not a commodity to us and will never be traded or sold.</h5>
+    
+     
+    <div id="ContactUs" align="center">
+		
+		<hr>
+		
+		<div>
+			<a href="mailto:thisemailexists@gmail.com">
+			  <h2>Contact Us</h2>
+			  </a>
+		</div>
+		<table>
+			<tr>
+				<td><img src="../img/house_logo.jpg" height=auto width="120"></td>
+			</tr>
+		</table>
+		<div><p>1600 Main St.<br>Warrensburg, MO 64093<br>Tel: (660) 429-5555</p></div>
+		<div>
+			<h3>Hours</h3>
+		</div>
+		<div>Weekdays: 8:00am - 7:00pm<br>Saturday: 8:00am - 6:00pm<br>Closed on Sundays</div>
+	</div>
+	
+	     
+    <h6>Log Out <a href="./logged_out.html">here</a>.</h6>
+    <br>
+   
+    
+        <script src="js/submitApp.js"> </script>
+    
+</body>
+
+</html>

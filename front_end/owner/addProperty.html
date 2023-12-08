@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <title>MALAND LLC</title>
+    
+    <link rel="shortcut icon" href="../img/hardhat.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    
+        <style>
+      body {background-color: #B6D0E2;
+            }
+    </style>
+    
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <h2>Add New Property</h2>
+          <br>
+          
+          <form id="create-property-form">
+            
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="str_address">Street Address: </label>
+              <input type="text" name="str_address" id="str_address" /><br /><br>
+            </div>
+            
+            <div class="form-row">
+            <div class="form-group">
+              <label for="city">City: </label>
+              <input type="text" name="city" id="city" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="state">State: </label>
+              <input type="text" name="state" id="state" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="zip">Zip: </label>
+              <input type="text" name="zip" id="zip" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="year">Year Built: </label>
+              <input type="text" id="year" name="year" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="type">Type: </label>
+              <input type="text" id="type" name="type" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="price">Price: </label>
+              <input type="text" id="price" name="price" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="sqft">Size: </label>
+              <input type="text" id="sqft" name="sqft" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="beds">Number of Bedrooms: </label>
+              <input type="text" id="beds" name="beds" /><br /><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="baths">Number of Bathrooms: </label>
+              <input type="text" id="baths" name="baths" /><br /><br>
+            </div><br>
+            
+            <!-- entered here -->
+            
+            
+            
+            <label for="lease_term">Description:</label><br />
+              <textarea id="description" name="description" rows="5" cols="60" placeholder="Example: Owner pays for lawn care and water. Tenant is responsible for gas and electric."></textarea>
+            </div>
+            <br>
+            
+            <div class="form-group">
+          <fieldset>
+          <legend>Laundry facilities:</legend>
+          
+                  <div>
+                     <input type="radio" id="Nolaundry" name="laundry" value="No Laundry">
+                     <label for="Nolaundry">No laundry facilities are available</label>
+                  </div>
+                  
+              <div>
+              <input type="radio" id="washer-dryer" name="laundry" value="Washer-Dryer Included">
+               <label for="washer-dryer">Washer-dryer included</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="hookups" name="laundry" value="Washer-Dryer Hookups">
+                <label for="hookups">Washer-dryer hookups</label>
+              </div>
+              
+              <div>
+                 <input type="radio" id="shared" name="laundry" value="Public Facilities">
+                 <label for="shared">Shared or in building</label><br>
+              </div>
+              
+          </fieldset>
+          
+          <div>
+           <div class="form-group">
+           <br>
+           <br>
+              
+          <fieldset>
+          <legend>Amenities or Features</legend>
+          
+        <div class="row">
+         <div class="col-12">
+           
+      <ul>
+        
+       <li>
+           <label for="nopets" class="container">No pets:
+            <input type="checkbox" id="nopets" name="nopets" value="nopets" />
+             <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       <li>
+                    <label for="cats" class="container">Cats:
+                   <input type="checkbox" id="cats" name="cats" value="cats" />
+                     <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       <li>
+           <label for="smldog" class="container">Small Dogs:
+           <input type="checkbox" id="smldogs" name="smldogs" value="smldogs"/>
+           <span class="checkmark"></span>
+          </label> 
+       </li>
+        
+       <li>
+                <label for="lgdogs" class="container">Large Dogs:
+                   <input type="checkbox" id="lgdogs" name="lgdogs" value="lgdogs" />
+               <span class="checkmark"></span>
+          </label>
+       </li>
+        
+        <li>
+                      <label for="hardwood" class="container">Hardwood floors
+                  <input type="checkbox" id="hardwood" name="hardwood" value="hardwood" />
+                  
+                         <li>
+           <label for="carpet" class="container">Carpet:
+                   <input type="checkbox" id="carpet" name="carpet" value="carpet" />
+                   
+                          <li>
+           <label for="tile" class="container">Tile Floors:
+                   <input type="checkbox" id="tile" name="tile" value="tile" />
+                  
+            <span class="checkmark"></span>
+          </label>
+                  
+            <span class="checkmark"></span>
+          </label>
+        
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        <li>
+                <label for="deck" class="container">Balcony or deck
+                   <input type="checkbox" id="cats" name="deck" value="deck" />
+              
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       <li>
+           <label for="furnished" class="container">Furnished:
+                   <input type="checkbox" id="furnished" name="pet" value="furnished"/>
+                   
+            <span class="checkmark"></span>
+          </label>
+       </li>
+        
+       </li>
+        
+        <li>
+             <label for="dishwasher" class="container">Dishwasher:
+                  <input type="checkbox" id="dishwasher" name="dishwasher" value="dishwasher" />
+                 
+            <span class="checkmark"></span>
+          </label>
+       </li>
+       
+       <li>
+            <label for="lawn" class="container">Lawn Service:
+                   <input type="checkbox" id="lawn" name="lawn" value="lawn" />
+                 
+            <span class="checkmark"></span>
+          </label>
+       </li>
+       
+              <li>
+           <label for="trash" class="container">Trash Service:
+                   <input type="checkbox" id="trash" name="trash" value="trash" />
+                  
+            <span class="checkmark"></span>
+          </label>
+        
+
+               <li>
+           <label for="utilities" class="container">Utilities Paid:
+                   <input type="checkbox" id="utility" name="utility" value="utility" />
+                  
+            <span class="checkmark"></span>
+          </label>
+          
+                 <li>
+           <label for="some" class="container">Some Utilities Paid:
+                   <input type="checkbox" id="some" name="some" value="some" />
+                  
+            <span class="checkmark"></span>
+          </label>
+
+
+       
+       </ul>
+       
+       </div>
+     </div>
+            </fieldset>
+            <br>
+
+        <br>
+        <br>
+                    
+            <button type="submit" class="btn btn-primary" id="submit">
+              Add Property
+            </button>
+            <br>
+            <br>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+     
+    <div id="ContactUs" align="center">
+		
+		
+		
+		<div>
+		<hr>
+			  <h2>Contact Us</h2>
+			  
+		</div>
+		<table>
+			<tr>
+				<td><img src="../img/house_logo.jpg" height=auto width="120"></td>
+			</tr>
+		</table>
+		<div><p>1600 Main St.<br>Warrensburg, MO 64093<br>Tel: (660) 429-5555</p></div>
+		<div>
+			<h3>Hours</h3>
+		</div>
+		<div>Weekdays: 8:00am - 7:00pm<br>Saturday: 8:00am - 6:00pm<br>Closed on Sundays</div>
+	</div>
+	
+	     
+   <br><br><center><small>Log Out <a href="XXXINSERT THE LOGIN LINKXXX">here</a>.</small></center>
+   
+    <br>
+   
+
+
+    <script src="js/projectAdd.js"> </script>
+  </body>
+</html>
